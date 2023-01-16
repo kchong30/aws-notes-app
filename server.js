@@ -63,7 +63,7 @@ app.post("/notes/:id/delete", async (req, res) => {
 
 app.use(express.static("public"))
 
-const port = 8080;
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });

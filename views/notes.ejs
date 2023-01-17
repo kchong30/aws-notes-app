@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/notes.css">
     <title>All Notes</title>
 </head>
 <body>
     <h1>Notes</h1>
     <% notes.forEach(note => { %>
-        <li>
+        <li style="list-style:none">
             <h2><%= note.title %></h2>
             <p><%= note.contents %></p>
-            <h2>Created: <%= note.created %></h2>
 
             <a href="/notes/<%= note.id %>">More Info!</a>
         </li>

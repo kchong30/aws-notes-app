@@ -10,11 +10,19 @@
     <h1>Create Note</h1>
 
     <form action="/notes" method = "POST">
-        <label for="titleInput">TItle</label>
-        <input type = "text" id="titleInput" name="title">
-        <label for="contentsInput">Contents</label>
-        <textarea name = "contents", id="contentsInput", cols="30", rows = "10"></textarea>
-        <button type = "submit">Create Note</button>
+        <div>
+            <label for="titleInput">Title: </label>
+            <input type = "text" id="titleInput" name="title">
+        </div>
+        <div>
+            <div>
+             <label for="contentsInput">Contents</label>
+            </div>
+            <textarea name = "contents", id="contentsInput", cols="30", rows = "10"></textarea>
+        </div>
+        <div>
+            <button type = "submit">Create Note</button>
+        </div>
     </form>
     
 </body>
